@@ -1,0 +1,15 @@
+// Currying is a process in JavaScript where a function with multiple
+// Arguments is transformed into a sequence of functions that each take a single argument.
+
+
+function Base(value1){
+  return function(value2){
+    return value1*value2
+  }
+}
+
+const ref = Base(2);
+
+for(i=1; i<=10; i++){
+    console.log(`2 * ${i} = ${ref(i)}`)
+}
