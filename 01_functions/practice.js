@@ -4,36 +4,36 @@
 
 // console.log(result);
 
-// const arr2 = [1, "s", "abhi", false];
+const arr2 = [1, "s", "abhi", false];
 
-// const str = [];
-// const num = [];
-// const boolen = [];
-// const char = [];
+const str = [];
+const num = [];
+const boolen = [];
+const char = [];
 
-// function arrayfunction(arr2) {
-//   arr2.forEach((item, index) => {
-//     if (typeof item === "number") {
-//       num.push(item);
-//     } else if (typeof item === "boolean") {
-//       boolen.push(item);
-//     } else if (typeof item === "string") {
-//       if (item.length === 1) {
-//         char.push(item);
-//       } else {
-//         str.push(item);
-//       }
-//     }
-//   });
-//   return {
-//     string : str,
-//     number : num,
-//     Boolean : boolen,
-//     character : char
-//   }
-// }
+function arrayfunction(arr2) {
+  arr2.forEach((item, index) => {
+    if (typeof item === "number") {
+      num.push(item);
+    } else if (typeof item === "boolean") {
+      boolen.push(item);
+    } else if (typeof item === "string") {
+      if (item.length === 1) {
+        char.push(item);
+      } else {
+        str.push(item);
+      }
+    }
+  });
+  return {
+    string : str,
+    number : num,
+    Boolean : boolen,
+    character : char
+  }
+}
 
-// console.log(arrayfunction(arr2))
+console.log(arrayfunction(arr2))
 
 // function temp (){
 
@@ -61,20 +61,20 @@
 //   console.log(a)
 // })
 
-const p1 = new Promise((res, rej) => {
-  let status = 204;
-  if (status === 200) {
-    res("i am resolve");
-  } else {
-    rej("i am rejected");
-  }
-});
+// const p1 = new Promise((res, rej) => {
+//   let status = 204;
+//   if (status === 200) {
+//     res("i am resolve");
+//   } else {
+//     rej("i am rejected");
+//   }
+// });
 
-p1.then((data) => {
-  console.log(data);
-}).catch((error) => {
-  console.log(error);
-});
+// p1.then((data) => {
+//   console.log(data);
+// }).catch((error) => {
+//   console.log(error);
+// });
 
 // console.log("bye")
 

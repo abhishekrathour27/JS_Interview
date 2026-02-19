@@ -18,48 +18,48 @@
 //     Any .then() handlers attached to boilWater() will now execute
 
 
-function boilWater() {
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      console.log("Water boiled");
-      res();
-    }, 1000);
-  });
-}
-function addTeaLeaves() {
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      console.log("Tea leaves added");
-      res();
-    }, 2000);
-  });
-}
-function addMilk() {
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      console.log("Milk added");
-      res();
-    }, 3000);
-  });
-}
-function teaServed() {
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      console.log("Tea served");
-      res();
-    }, 4000);
-  });
-}
+// function boilWater() {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       console.log("Water boiled");
+//       res();
+//     }, 1000);
+//   });
+// }
+// function addTeaLeaves() {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       console.log("Tea leaves added");
+//       res();
+//     }, 2000);
+//   });
+// }
+// function addMilk() {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       console.log("Milk added");
+//       res();
+//     }, 3000);
+//   });
+// }
+// function teaServed() {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       console.log("Tea served");
+//       res();
+//     }, 4000);
+//   });
+// }
 
  // 🔗 Chaining Promises
 
-boilWater()
-  .then(() => addTeaLeaves())
-  .then(() => addMilk())
-  .then(() => teaServed())
-  .catch((error) => {
-    console.error("errors = ", error);
-  });
+// boilWater()
+//   .then(() => addTeaLeaves())
+//   .then(() => addMilk())
+//   .then(() => teaServed())
+//   .catch((error) => {
+//     console.error("errors = ", error);
+//   });
 
   const p1 = new Promise((res, rej) => {
   let status = 204;
