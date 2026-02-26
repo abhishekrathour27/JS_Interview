@@ -1,4 +1,5 @@
 // Map hamesha same length ka naya array return karta hai.
+// map() is an array method used to iterate over an array and create a new array by applying a function to each element.
 const arr = [1, 2, 3, 4, 5];
 
 const result = arr.map(num => num < 3);
@@ -17,7 +18,7 @@ if([]){
     console.log("Hello")
 }
 
-console.log(typeof([])) // type -> object
+console.log(typeof([])); // type -> object
 
 
 // array always returns object and object is a true value

@@ -222,25 +222,25 @@
 //Output => sync ,  micro-first , delayed-macro , macro-first , delayed-micro -> wrong
 
 // 14
-Promise.resolve(1)
-  .then(val => {
-    console.log('A:', val);
-    return val + 1;
-  })
-  .then(val => {
-    console.log('B:', val);
-    throw new Error('fail');
-  })
-  .then(val => {
-    console.log('C:', val);
-  })
-  .catch(err => {
-    console.log('D:', err.message);
-    return 99;
-  })
-  .then(val => {
-    console.log('E:', val);
-  });
+// Promise.resolve(1)
+//   .then(val => {
+//     console.log('A:', val);
+//     return val + 1;
+//   })
+//   .then(val => {
+//     console.log('B:', val);
+//     throw new Error('fail');
+//   })
+//   .then(val => {
+//     console.log('C:', val);
+//   })
+//   .catch(err => {
+//     console.log('D:', err.message);
+//     return 99;
+//   })
+//   .then(val => {
+//     console.log('E:', val);
+//   });
 
   // Output => A:1 , B:2  , C:2 , fail , E: 99 - wrong
 
@@ -270,7 +270,9 @@ Promise.resolve(1)
 //     console.log('caught-again');
 //   });
 
-// // 16
+  // Output => caught , recovered
+
+// 16
 
 // function fetchData(success) {
 //   return new Promise((resolve, reject) => {
@@ -296,7 +298,9 @@ Promise.resolve(1)
 //     console.log('final-err:', err);
 //   });
 
-// // 17
+// Output => response : 200ok , 404 error , cached-data
+
+// 17
 
 // function run() {
 //   return new Promise((resolve, reject) => {
@@ -311,6 +315,8 @@ Promise.resolve(1)
 // run()
 //   .then(v => console.log(v + 1))
 //   .catch(e => console.log(e));
+
+  // Output => begin , end , 11 , 
 
 // // 18
 
@@ -342,12 +348,8 @@ p8.then(v => {
   console.log('then-D:', v);
 });
 
+//Output => start , executer , executer-end , 
 
-// start
-// execute 
-// executer-end
-// syncend
-// Result
 //
 
 

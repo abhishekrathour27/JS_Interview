@@ -1,5 +1,4 @@
-// Callback Hell is a situation in JavaScript where multiple
-// nested callbacks make code hard to read, difficult to debug, and unmaintainable.
+//Callback Hell is a situation in JavaScript where multiple callbacks are nested inside each other, making the code hard to read, difficult to maintain, and complex to debug
 // It usually happens when asynchronous operations are chained one after
 // another using callbacks — resulting in a pyramid or Christmas tree-like structure
 
