@@ -65,7 +65,7 @@ dowload(() => {
   });
 });
 
-("Q5"); // => using find() , find first even no in this [5,11,18,21,40,7]
+("Q5"); // => using find() , find first even no which is > 20 in this [5,11,18,21,40,7]
 
 const arr = [5, 11, 18, 21, 40, 7];
 
@@ -92,7 +92,7 @@ console.log(removeFalsyValue);
 
 const array = [{ price: 100 }, { price: 200 }, { price: 300 }];
 
-const reduceRes = array.reduce((acc, num) => acc + num, 0);
+const reduceRes = array.reduce((acc, num) => acc + num.price, 0);
 
 ("Q9"); // =>
 

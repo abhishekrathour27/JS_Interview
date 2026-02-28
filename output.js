@@ -41,21 +41,20 @@
 //   }, 3000);
 // }
 
-
 // dowload(() => {
 //   compress(() => {
 //     upload();
 //   });
 // });
 
-"5"
+"5";
 
 // const arr = [5, 11, 18, 21, 40, 7];
 
 // const findRes = arr.find((num) => num % 2 === 0 && num > 20);
 // console.log(findRes);
 
-"6"
+"6";
 
 // const arr2 = [1, 2, 3, 4];
 
@@ -65,7 +64,7 @@
 
 // console.log(arr2res);
 
-"7"
+"7";
 
 // const falsyValue = [0, 1, false, 2, "", 3, null];
 
@@ -73,14 +72,14 @@
 
 // console.log(removeFalsyValue);
 
-"8"
+"8";
 
 // const array = [{ price: 100 }, { price: 200 }, { price: 300 }];
 
 // const reduceRes = array.reduce((acc , num)=> acc + num.price , 0)
 // console.log(reduceRes)
 
-"9"
+"9";
 
 // const obj1 = {
 //   name: "Abhishek",
@@ -92,7 +91,7 @@
 
 // console.log(obj1?.number?.name);
 
-"10"
+"10";
 
 // console.log("Start");
 
@@ -106,7 +105,7 @@
 
 // console.log("End");
 
-"11"
+"11";
 
 // Promise.resolve(1)
 // .then((res)=>{
@@ -121,15 +120,27 @@
 //  console.log(err);
 // });
 
-console.log("A");
+// console.log("A");
 
-setTimeout(()=>{
- console.log("B");
-},0);
+// setTimeout(()=>{
+//  console.log("B");
+// },0);
 
-Promise.resolve().then(()=>{
- console.log("C");
-});
+// Promise.resolve().then(()=>{
+//  console.log("C");
+// });
 
-console.log("D");
+// console.log("D");
 
+//=>
+
+const users = [
+  { name: "Rohit", age: 22 },
+  { name: "Aman", age: 25 },
+  { name: "Priya", age: 21 },
+  { name: "Sohan", age: 28 },
+];
+
+const arr = [22, 25, 44, 18];
+const res = users.reduce((acc, curr) => (acc.age > curr.age ? acc : curr));
+console.log(res);
