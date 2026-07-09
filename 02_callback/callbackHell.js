@@ -11,29 +11,29 @@ function boilWater(callback) {
 
 function addTealeaves(callback) {
   setTimeout(() => {
-    console.log("Tea leaves added");
+    console.log("2 . Tea leaves added");
     callback();
   }, 2000);
 }
 function addSuger(callback) {
   setTimeout(() => {
-    console.log("suger  added");
+    console.log("3 . suger  added");
     callback();
   }, 3000);
 }
 function serveTea() {
   setTimeout(() => {
-    console.log("Served ");
+    console.log("4 . Served ");
   }, 4000);
 }
 
-boilWater(() => {
-  addTealeaves(() => {
-    addSuger(() => {
-      serveTea();
-    });
-  });
-});
+boilWater(()=>{
+  addTealeaves(()=>{
+    addSuger(()=>{
+      serveTea()
+    })
+  })
+})
 
 // boilWater(addTealeaves())
 

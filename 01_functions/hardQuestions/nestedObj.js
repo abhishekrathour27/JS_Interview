@@ -2,12 +2,13 @@ let student = {
   name: "Rohit",
   address: {
     city: "Mumbai"
+
   }
 };
 
 // The optional chaining ?. is a safe way to access nested object properties, even if an intermediate property doesn’t exist.
 
-console.log(student.address?.hello)
+console.log(student?.address?.city)
 // Yeh error nahi dega, kyunki address object exist karta hai,
 // bas uske andar hello property nahi hai → so result undefined.
 

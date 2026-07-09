@@ -120,18 +120,18 @@
 
 // //7 
 
-// const make = () => new Promise((resolve, reject) => {
-//   console.log('build');
-//   resolve('shipped');
-// });
+const make = () => new Promise((resolve, reject) => {
+  console.log('build');
+  resolve('shipped');
+});
 
-// make().then(res => {
-//   console.log(res);
-// });
+make().then(res => {
+  console.log(res);
+});
 
-// console.log('deploy');
+console.log('deploy');
 
-// //Output => build , deploy , shipped
+//Output => build , deploy , shipped
 
 // //8
 // const p = new Promise((resolve, reject) => {
@@ -320,33 +320,33 @@
 
 // // 18
 
-console.log('start');
+// console.log('start');
 
-const p8 = new Promise((resolve, reject) => {
-  console.log('executor');
-  resolve('RESULT');
-  reject('ERR');
-  resolve('RESULT-2');
-  setTimeout(() => resolve('RESULT-3'), 0);
-  console.log('executor-end');
-});
+// const p8 = new Promise((resolve, reject) => {
+//   console.log('executor');
+//   resolve('RESULT');
+//   reject('ERR');
+//   resolve('RESULT-2');
+//   setTimeout(() => resolve('RESULT-3'), 0);
+//   console.log('executor-end');
+// });
 
-setTimeout(() => console.log('slow-timer'), 100);
-setTimeout(() => console.log('fast-timer'), 0);
+// setTimeout(() => console.log('slow-timer'), 100);
+// setTimeout(() => console.log('fast-timer'), 0);
 
-console.log('sync-end');
+// console.log('sync-end');
 
-p8.then(v => {
-  console.log('then-A:', v);
-}).then(v => {
-  console.log('then-B:', v);
-});
+// p8.then(v => {
+//   console.log('then-A:', v);
+// }).then(v => {
+//   console.log('then-B:', v);
+// });
 
-p8.then(v => {
-  console.log('then-C:', v);
-}).then(v => {
-  console.log('then-D:', v);
-});
+// p8.then(v => {
+//   console.log('then-C:', v);
+// }).then(v => {
+//   console.log('then-D:', v);
+// });
 
 //Output => start , executer , executer-end , 
 

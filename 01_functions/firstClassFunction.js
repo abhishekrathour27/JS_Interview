@@ -22,20 +22,22 @@ const fun = function () {
   console.log("Hello world");
 };
 
+fun()
+
 
 //3) returned from another fucntion
-function hello(){
-    let a=10;
-    function b(){
-        console.log(a);
-    }
-    return b;
+function main(){
+  let x = 2 
+  function returnFun (){
+    console.log(x)
+  }
+  return returnFun;
 }
 
-const bRef=hello();
-bRef();
+const mainRef = main()
+mainRef()
 
-//4) store then in data structure called array
+//4) store them in data structure called array
 const sayHello = () => console.log("Hello");
 const sayHi = () => console.log("Hi");
 const sayBye = () => console.log("Bye");
