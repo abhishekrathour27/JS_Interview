@@ -2,29 +2,32 @@
 // It usually happens when asynchronous operations are chained one after
 // another using callbacks — resulting in a pyramid or Christmas tree-like structure
 
-function boilWater(callback) {
-  setTimeout(() => {
-    console.log("1 . water boiled");
-    callback();
-  }, 1000);
+function boilWater(callback){
+   setTimeout(()=>{
+    console.log("water boiled")
+    callback()
+   } , 1000)
 }
 
-function addTealeaves(callback) {
-  setTimeout(() => {
-    console.log("2 . Tea leaves added");
-    callback();
-  }, 2000);
+function addTealeaves(callback){
+   setTimeout(()=>{
+    console.log("Add tea leaves")
+    callback()
+   }, 2000)
 }
-function addSuger(callback) {
-  setTimeout(() => {
-    console.log("3 . suger  added");
-    callback();
-  }, 3000);
+
+function addSuger(callback){
+   setTimeout(()=>{
+    console.log("Add some suger")
+    callback()
+   } , 3000)
 }
-function serveTea() {
-  setTimeout(() => {
-    console.log("4 . Served ");
-  }, 4000);
+
+function serveTea(){
+   setTimeout(()=>{
+    console.log("Serve the tea")
+  
+   } , 4000)
 }
 
 boilWater(()=>{

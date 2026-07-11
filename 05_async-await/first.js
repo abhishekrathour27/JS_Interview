@@ -30,4 +30,3 @@ handlePromise();
 
 
 // NOTE => if we have two promsie in async fucntion then jo pehla await hoga vo agar 5 sec ke timer pe hai to vo resolve ho jayega 5 sec pe or fir jayega neeche but agr upper walla 10 sec ka hai or neeche walla 5 sec ka then neeche walla bhi 10 sec ke baadh log hota hai
-fku-pfum-xjr
