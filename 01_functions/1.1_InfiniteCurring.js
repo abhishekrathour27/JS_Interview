@@ -13,16 +13,16 @@
 
 // console.log(infiniteCurrying(1)(2)(3)());
 
-function outer (val1){
+function outer (val1){ // 3
   return function inner(val2){
     if(!val2){
       return val1;
     }
-    return outer(val1 + val2)
+    return outer(val1 + val2)// 2 + 1 = 3
   }
 }
 
-// console.log("output : " , outer(1)(2)(5)())
+console.log("output : " , outer(1)(2)(3)())
 
 
 
